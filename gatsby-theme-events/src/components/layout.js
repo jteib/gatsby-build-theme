@@ -4,7 +4,7 @@ import { Layout as ThemeLayout, Header, Main, Container } from "theme-ui";
 const Layout = ({ children }) => {
   return (
     <ThemeLayout>
-      <Header>Gatsby Events Theme</Header>
+      <Header><h1>Gatsby Events Theme</h1></Header>
       <Main>
         <Container>{children}</Container>
       </Main>

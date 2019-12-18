@@ -24,16 +24,33 @@ export const theme = {
       fontSize: 1,
       lineHeight: "body"
     },
+    // Header: {
+    //   backgroundColor: "primary",
+    //   color: "background",
+    //   fontWeight: "bold",
+    //   margin: "0 auto",
+    //   maxWidth: "max",
+    //   padding: 3,
+    //   width: "default",
+    //   a: {
+    //     color: "inherit"
+    //   }
+    // },
     Header: {
-      backgroundColor: "primary",
-      color: "background",
+      backgroundColor: "black",
+      color: "#8080FE",
       fontWeight: "bold",
-      margin: "0 auto",
-      maxWidth: "max",
-      padding: 3,
-      width: "default",
+      maxWidth: "100%",
+      width: "100vw",
       a: {
         color: "inherit"
+      },
+      h1: {
+        fontFamily: "Sego UI",
+        fontSize: 5,
+        padding: "2rem 0",
+        margin: "0 0 0 8rem",
+        position: "relative"
       }
     },
     Main: {
@@ -68,4 +85,3 @@ export const theme = {
   }
 };
 
-export default theme;
