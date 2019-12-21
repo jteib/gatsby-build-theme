@@ -1,4 +1,5 @@
 import React from "react";
+import { Styled } from "theme-ui";
 
 const getDate = (date, { day = true, month = true, year = true } = {}) =>
   date.toLocaleDateString("en-US", {

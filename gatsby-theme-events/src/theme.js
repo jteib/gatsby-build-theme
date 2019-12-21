@@ -24,7 +24,36 @@ export const theme = {
       color: "gray.0",
       fontFamily: "body",
       fontSize: 1,
-      lineHeight: "body"
+      lineHeight: "body",
+      a: {
+        textDecoration: "none",
+        color: "white",
+        padding: "2",
+        "&:focus-within,&:hover": {
+          color: "primary"
+        }
+      },
+      h1: {
+        color: "primary",
+        fontSize: 5,
+        fontWeight: "bold",
+        lineHeight: "heading",
+        margin: "1rem 0 0"
+      },
+      h2: {
+        color: "primary"
+      },
+      ul: {
+        borderTop: "1px solid",
+        borderColor: "gray.0",
+        listStyle: "none",
+        padding: 0
+      },
+      li: {
+        borderBottom: "1px solid",
+        borderColor: "gray.1",
+        padding: 2,
+      },
     },
     Header: {
       display: "grid",
@@ -35,11 +64,6 @@ export const theme = {
       width: "100vw",
       a: {
         float: "right",
-        color: "white",
-        padding: "2",
-        "&:focus-within,&:hover": {
-          color: "primary"
-        }
       },
       h1: {
         fontFamily: "Sego UI",
@@ -67,31 +91,6 @@ export const theme = {
     Container: {
       padding: 3
     },
-    h1: {
-      color: "primary",
-      fontSize: 5,
-      fontWeight: "bold",
-      lineHeight: "heading",
-      margin: "1rem 0 0"
-    },
-    ul: {
-      borderTop: "1px solid",
-      borderColor: "gray.0",
-      listStyle: "none",
-      padding: 0
-    },
-    li: {
-      borderBottom: "1px solid",
-      borderColor: "gray.1",
-      padding: 2,
-      a: {
-        color: "inherit",
-        textDecoration: "none",
-        "&:focus-within,&:hover": {
-          color: "primary"
-        }
-      },
-    }
   }
 
 }
