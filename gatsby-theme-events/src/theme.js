@@ -10,59 +10,65 @@ export const theme = {
   },
   colors: {
     gray: ["#efefef", "#ddd", "#333", "#111"],
-    background: "#fff",
-    primary: "rebeccapurple"
+    background: "black",
+    primary: "#8080FE",
+    text: "#fff"
   },
   sizes: {
-    default: "90vw",
+    default: "100vw",
     max: "540px"
   },
   styles: {
     Layout: {
-      color: "gray.2",
+      backgroundColor: "black",
+      color: "gray.0",
       fontFamily: "body",
       fontSize: 1,
       lineHeight: "body"
     },
-    // Header: {
-    //   backgroundColor: "primary",
-    //   color: "background",
-    //   fontWeight: "bold",
-    //   margin: "0 auto",
-    //   maxWidth: "max",
-    //   padding: 3,
-    //   width: "default",
-    //   a: {
-    //     color: "inherit"
-    //   }
-    // },
     Header: {
-      backgroundColor: "black",
-      color: "#8080FE",
+      display: "grid",
+      gridTemplateColumn: "1fr 1fr auto",
+      color: "primary",
       fontWeight: "bold",
       maxWidth: "100%",
       width: "100vw",
       a: {
-        color: "inherit"
+        float: "right",
+        color: "white",
+        padding: "2",
+        "&:focus-within,&:hover": {
+          color: "primary"
+        }
       },
       h1: {
         fontFamily: "Sego UI",
         fontSize: 5,
         padding: "2rem 0",
         margin: "0 0 0 8rem",
-        position: "relative"
+        position: "relative",
+      },
+      nav: {
+        float: "right",
+        fontSize: 0,
+        margin: "0 8rem 0 0",
       }
     },
+    // Main: {
+    //   margin: "0 auto",
+    //   maxWidth: "max",
+    //   width: "default"
+    // },
     Main: {
       margin: "0 auto",
-      maxWidth: "max",
+      maxWidth: "100%",
       width: "default"
     },
     Container: {
       padding: 3
     },
     h1: {
-      color: "gray.3",
+      color: "primary",
       fontSize: 5,
       fontWeight: "bold",
       lineHeight: "heading",
@@ -78,10 +84,14 @@ export const theme = {
       borderBottom: "1px solid",
       borderColor: "gray.1",
       padding: 2,
-      "&:focus-within,&:hover": {
-        backgroundColor: "gray.0"
-      }
+      a: {
+        color: "inherit",
+        textDecoration: "none",
+        "&:focus-within,&:hover": {
+          color: "primary"
+        }
+      },
     }
   }
-};
 
+}
